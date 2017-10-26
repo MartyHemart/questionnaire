@@ -1,4 +1,4 @@
-.style {
+/*.style {
 
 margin-left: auto;
 margin-right: auto;
@@ -18,4 +18,11 @@ color: red;
 
 .container {
     display: inline-table;
+}*/
+fieldset{
+  margin-bottom: 15px;
+}
+form{
+  width: 40%;
+    margin: 0 auto;
 }

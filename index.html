@@ -8,57 +8,62 @@
 <body>
 
   <div>
-    <form class="style" action="./script.php">
-             <div class="bordure container">
-             <p class="text"> Cocher un éditeur de Text </p> <br>
+    <form  action="./script.php">
+
+               <fieldset>
+
+
+             <legend>Cocher un éditeur de Text</legend>
             <input type="radio" name="choix" value="safari"> Safari
             <input type="radio" name="choix" value="chrome"> Chrome
             <input type="radio" name="choix" value="Atome"> Atome
             <input type="radio" name="choix" value="Windows"> Windows
-          </div>
+                 </fieldset>
+
               <br>
-               <div class="bordure container">
+               <fieldset>
               <p class="text"> Cocher le navigateur web </p> <br>
             <input type="radio" name="choix1" value="unity"> unity
             <input type="radio" name="choix1" value="chrome"> Chrome
             <input type="radio" name="choix1" value="Atome"> Atome
             <input type="radio" name="choix1" value="Windows"> Windows
+          </fieldset>
               <br>
-            </div>
-             <div class="bordure container">
+            <fieldset>
               <p class="text"> Comment s'appel le premier PC </p> <br>
               <input type="radio" name="choix2" value="Multivac"> Multivac
               <input type="radio" name="choix2" value="The_Engine"> The Engine
               <input type="radio" name="choix2" value="Colossus"> Colossus
               <input type="radio" name="choix2" value="Z3"> Z3
               <br>
-            </div>
-             <div class="bordure container">
+            </fieldset>
+
+             <fieldset>
              <p class="text"> Quel est le nom de la marque qui produit des téléphones modifiable </p>
              <input type="text" name="choix3" placeholder="taper ici">
              <br>
-             <div>
-                <div class="bordure container">
+           </fieldset>
+                <fieldset>
              <p class="text"> En quel année a été crée la sourie ? </p> <br>
              <input type="radio" name="choix4" value="1987"> 1987
              <input type="radio" name="choix4" value="1963"> 1963
              <input type="radio" name="choix4" value="1959"> 1959
              <input type="radio" name="choix4" value="1949"> 1949
              <br>
-           </div>
-            <div class="bordure container">
+           </fieldset>
+            <fieldset>
             <p class="text"> En quel année es mort Steve Job ?</p> <br>
             <input type="date" name="choix5">
             <br>
-          </div>
-           <div class="bordure container">
+          </fieldset>
+           <fieldset>
             <p class="text"> Quels sont les création de Apple </p> <br>
             <input type="checkbox" name="choix6[]" value="DidiChuxing">  Didi Chuxing
             <input type="checkbox" name="choix6[]" value="tvOS"> tvOS
             <input type="checkbox" name="choix6[]" value="appletv"> appletv
             <input type="checkbox" name="choix6[]" value="Directx"> DirectX
             <br>
-          </div>
+          </fieldset>
 
             <input type="submit" value="validation">
 
