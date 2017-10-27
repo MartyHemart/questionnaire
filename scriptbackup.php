@@ -71,18 +71,23 @@ if(isset($_GET["myradio5"]) == "2011-10-05") {
  };
 //fin question 6
 //debut question 7
-$apple = $_GET["myradio6"]; // $apple garder les choix en memour
-$response = array("DidiChuxing", "tvOS", "appletv"); //$reponse garde les bonne reponse en memoir
 
-if(in_array('Directx', $apple)) { //in_array verifier la mauvaise réponse dans $apple n'estb pas cocher (ici "directx")
-} else {
-  if(count(array_diff($response, $apple)) == 0) {     // si directx n'est pas cocher la reponse est bonne
-    echo "c'est la bonne réponse bravo !";
-    echo "<br>";
-    $point += 1;
+$response = array("DidiChuxing", "tvOS", "appletv"); //$reponse garde les bonne reponse en memoir
+if(isset($_GET["myradio6"]))
+{
+
+
+  $apple = $_GET["myradio6"];
+  if(in_array('Directx', $apple)) { //in_array verifier la mauvaise réponse dans $apple n'estb pas cocher (ici "directx")
   } else {
-  }
-}
+    if(count(array_diff($response, $apple)) == 0) {     // si directx n'est pas cocher la reponse est bonne
+      echo "c'est la bonne réponse bravo !";
+      echo "<br>";
+      $point += 1;
+    } else {
+    }
+  };
+};
 /*if (in_array(array("DidiChuxing", "tvOS", "appletv"), $apple)) {
    echo "Bonne réponse";
    echo '<br>';
