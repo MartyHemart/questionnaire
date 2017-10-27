@@ -1,26 +1,12 @@
-/*.style {
+.style {
 
-margin-left: auto;
-margin-right: auto;
-margin-top: auto;
-text-align: center;
-}
-
-.text {
-color: red;
-}
-
-.bordure {
-
-  border: 1px solid black;
+background: white;
 
 }
 
-.container {
-    display: inline-table;
-}*/
 fieldset{
   margin-bottom: 15px;
+  text-align: center;
 }
 form{
   width: 40%;
@@ -30,3 +16,26 @@ form{
 body {
   background: #dcd7d7;
 }
+
+/* imager du header */
+.imgcenter {
+width: 100%;
+}
+/* fin image du header */
+
+/* couleur de la premiere question */
+.textcouleur
+{
+background: black;
+color: white;
+
+}
+/*fin couleur de la premiere question */
+
+/* couleur secondaire */
+.textcouleur2
+{
+  background: #3f3e3e;
+  color: white;
+}
+/* fin couleur secondaire */
