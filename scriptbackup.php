@@ -60,7 +60,7 @@ if(isset($_GET["myradio4"]) == "1963") {
  };
 //fin 5 question
 //debut question 6
-if(isset($_GET["myradio5"]) == "2011-10-05") {
+if(isset($_GET["myradio5"]) && $_GET["myradio5"] == "2011-10-05") {
    echo "5 octobre 2011 es la bonne réponse";
    echo '<br>';
    $point += 1;
