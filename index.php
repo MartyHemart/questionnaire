@@ -15,6 +15,7 @@
   <img src="img/quizz.jpg" class="img-fluid imgcenter" alt="Responsive image">
 </div>
   <?php
+  session_start();
   echo "<center>";
   echo openForm("./scriptbackup.php");
 
@@ -25,7 +26,18 @@
   echo createInput("radio", "myradio", "chrome", "chrome");
   echo createInput("radio", "myradio", "atome", "atome");
   echo createInput("radio", "myradio", "windows", "windows");
-  echo "<br>";
+  if (isset($_SESSION['myradio'])) {
+
+   if ($_SESSION['myradio'] == 'Atome est la bonne réponse'){
+     echo "<p class='true'>" . $_SESSION['myradio'] . "</p>";
+   }else {
+     echo "<p class='false'>" . $_SESSION['myradio'] . ": Atome est la bonne réponse</p>";
+   }
+
+  };
+
+
+
 
   // fin question 1
 
@@ -70,6 +82,8 @@
   echo createSumit("voir le resultat");
   echo closeTag("form");
 
-echo "</center>";  ?>
+echo "</center>";
+session_destroy();
+?>
 </body>
 </html>

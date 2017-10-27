@@ -39,3 +39,12 @@ color: white;
   color: white;
 }
 /* fin couleur secondaire */
+
+/* bonne et mauvaise réponse */
+.true {
+  background-color: green;
+}
+
+.false {
+  background-color: red;
+}
