@@ -13,7 +13,7 @@ else {
 };
  // fin premiere question
  // second question
-if (isset($_GET["myradio2"]) == "chrome") {
+if (isset($_GET["myradio2"]) && $_GET["myradio2"] == "chrome") {
   $_SESSION['myradio2'] = 'Chrome est la bonne réponse';
    $point += 1;
  }
@@ -22,7 +22,7 @@ if (isset($_GET["myradio2"]) == "chrome") {
  };
   // fin second question
 // debut 3 question
-  if(isset($_GET["myradio3"]) == "Z3") {
+  if(isset($_GET["myradio3"]) && $_GET['myradio3'] == "Z3") {
     $_SESSION['myradio3'] = 'Z3 est la bonne réponse';
     $point += 1;
   }
@@ -31,7 +31,7 @@ if (isset($_GET["myradio2"]) == "chrome") {
   };
   // fin 3 question
 // debut 4 question
-  if(isset($_GET["myname"]) === "motorola") {
+  if(isset($_GET["myname"]) && $_GET["myname"] === "motorola") {
     $_SESSION['myname'] = 'motorola est la bonne réponse';
     $point += 1;
   }
@@ -40,7 +40,7 @@ if (isset($_GET["myradio2"]) == "chrome") {
   };
  // fin 4 question
  //debut question 5
-if(isset($_GET["myradio4"]) == "1963") {
+if(isset($_GET["myradio4"])  && $_GET["myradio4"] == "1963") {
   $_SESSION['myradio4'] = '1963 es la bonne réponse';
    $point += 1;
  }
@@ -54,7 +54,7 @@ if(isset($_GET["myradio5"]) && $_GET["myradio5"] == "2011-10-05") {
    $point += 1;
  }
  else {
- $_SESSION['myradio6'] = 'ce n\'est pas la bonne réponse';
+ $_SESSION['myradio5'] = 'ce n\'est pas la bonne réponse';
  };
 //fin question 6
 //debut question 7

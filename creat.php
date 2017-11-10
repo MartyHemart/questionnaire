@@ -45,7 +45,7 @@ function createDate($date, $name)
 }
 
 // fin function date
-// générer un bouton sumit
+// générer un bouton submit
 function createSumit($value)
 {
 

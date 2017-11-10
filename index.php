@@ -33,11 +33,7 @@
    }else {
      echo "<p class='false'>" . $_SESSION['myradio'] . ": Atome est la bonne réponse</p>";
    }
-
   };
-
-
-
 
   // fin question 1
 
@@ -46,7 +42,15 @@
   echo createInput("radio", "myradio2", "chrome", "chrome");
   echo createInput("radio", "myradio2", "atome", "atome");
   echo createInput("radio", "myradio2", "windows", "windows");
-  echo "<br>";
+  if (isset($_SESSION['myradio2'])) {
+   if ($_SESSION['myradio2'] == 'Chrome est la bonne réponse'){
+     echo "<p class='true'>" . $_SESSION['myradio2'] . "</p>";
+   }else {
+
+
+     echo "<p class='false'>" . $_SESSION['myradio2'] . ": Chrome est la bonne réponse</p>";
+   }
+  };
 
   echo createTag("legend", "textcouleur", "Comment s'appel le premier PC ?");
   echo createInput("radio", "myradio3", "Multivac", "Multivac");
@@ -54,10 +58,28 @@
   echo createInput("radio", "myradio3", "Colossus", "Colossus");
   echo createInput("radio", "myradio3", "Z3", "Z3");
   echo "<br>";
+  if (isset($_SESSION['myradio3'])) {
+
+   if ($_SESSION['myradio3'] == 'Z3 est la bonne réponse'){
+     echo "<p class='true'>" . $_SESSION['myradio3'] . "</p>";
+   }else {
+
+     echo "<p class='false'>" . $_SESSION['myradio3'] . ": Z3 est la bonne réponse</p>";
+   }
+  };
 
   echo createTag("legend", "textcouleur2", "Quel est le nom de la marque qui produit des téléphones modifiable ?");
   echo createInput("text", "myname", "tape ici", "");
   echo "<br>";
+  if (isset($_SESSION['myname'])) {
+
+   if ($_SESSION['myname'] == 'motorola est la bonne réponse'){
+     echo "<p class='true'>" . $_SESSION['myname'] . "</p>";
+   }else {
+
+     echo "<p class='false'>" . $_SESSION['myname'] . ": motorola est la bonne réponse</p>";
+   }
+  };
 
   echo createTag("legend", "textcouleur", "Comment s'appel le premier PC");
   echo createInput("radio", "myradio4", "1987", "1987");
@@ -65,10 +87,28 @@
   echo createInput("radio", "myradio4", "1966", "1966");
   echo createInput("radio", "myradio4", "1974", "1974");
   echo "<br>";
+  if (isset($_SESSION['myradio4'])) {
+
+   if ($_SESSION['myradio4'] == '1963 es la bonne réponse'){
+     echo "<p class='true'>" . $_SESSION['myradio4'] . "</p>";
+   }else {
+
+     echo "<p class='false'>" . $_SESSION['myradio4'] . ": 1963 es la bonne réponse</p>";
+   }
+  };
 
   echo createTag("legend", "textcouleur2", "En quel année est mort Steve Job ?");
   echo createDate("date", "myradio5");
   echo "<br>";
+  if (isset($_SESSION['myradio5'])) {
+
+   if ($_SESSION['myradio5'] == '5 octobre 2011 est la bonne réponse'){
+     echo "<p class='true'>" . $_SESSION['myradio5'] . "</p>";
+   }else {
+
+     echo "<p class='false'>" . $_SESSION['myradio5'] . ": 5 octobre 2011 est la bonne réponse</p>";
+   }
+  };
 
   echo createTag("legend", "textcouleur", "Quels sont les créations de Apple ");
   echo createInput("checkbox", "myradio6[]", "DidiChuxing", "DidiChuxing");
@@ -76,6 +116,16 @@
   echo createInput("checkbox", "myradio6[]", "appletv", "appletv");
   echo createInput("checkbox", "myradio6[]", "Directx", "Directx");
   echo "<br>";
+  if (isset($_SESSION['myradio6'])) {
+
+   if ($_SESSION['myradio6'] == 'c\'est la bonne réponse bravo !'){
+     echo "<p class='true'>" . $_SESSION['myradio6'] . "</p>";
+   }else {
+
+     echo "<p class='false'>" . $_SESSION['myradio6'] . ": c\'est la bonne réponse bravo !</p>";
+   }
+  };
+
 
 
 
